@@ -3,10 +3,25 @@
     <head>
         <meta charset="utf-8">
         <title>My Blog</title>
+        <link rel="stylesheet" href="/style.css">
     </head>
+
     <body>
+        <script>
+          if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+              if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                  document.location.href = "/admin/";
+                });
+              }
+            });
+          }
+        </script>
+
         <h1>{{ pageTitle }}</h1>
 
         {{ content }}
     </body>
 </html>
+
