@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <a href="/main">
+        <img src="/images/yaawn.jpg" alt="toothpaste">
+    </a>
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+
+    <hr />
+
+    <ul id="videos"></ul>
+</body>
+</html>
