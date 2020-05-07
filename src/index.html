@@ -11,5 +11,6 @@ pageTitle: Welcome to the blog
 {% for vid in collections.videos %}
     <h2>video</h2>
     <p>{{ vid.data.title }}</p>
+    {{ vid.data.embedCode }}
 {% endfor %}
 

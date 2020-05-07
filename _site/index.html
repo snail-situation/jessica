@@ -3,25 +3,38 @@
     <head>
         <meta charset="utf-8">
         <title>My Blog</title>
+        <link rel="stylesheet" href="/style.css">
     </head>
+
     <body>
+        <script>
+          if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+              if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                  document.location.href = "/admin/";
+                });
+              }
+            });
+          }
+        </script>
+
         <h1>Welcome to the blog</h1>
 
         
 <!--  -->
-<!--     <h2><a href="/posts/blog-post/">This is my title</a></h2> -->
-<!--     <em>2020-05-07</em> -->
-<!--  -->
-
 
 
     <h2>video</h2>
     <p>jelly bone</p>
+    <iframe width="564" height="423" src="https://www.youtube.com/embed/3mIZooCIQ3o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <h2>video</h2>
     <p>jelly bone</p>
+    <iframe width="564" height="423" src="https://www.youtube.com/embed/3mIZooCIQ3o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
     </body>
 </html>
+
