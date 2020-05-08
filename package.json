@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nichoth/jessica1.git"
+    "url": "git+https://github.com/nichoth/jessica.git"
   },
   "author": "Nick Thomas <nichoth@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nichoth/jessica1/issues"
+    "url": "https://github.com/nichoth/jessica/issues"
   },
-  "homepage": "https://github.com/nichoth/jessica1#readme",
+  "homepage": "https://github.com/nichoth/jessica#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
     "concurrently": "^5.0.2",
