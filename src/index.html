@@ -8,9 +8,13 @@ pageTitle: Welcome to the blog
 <!--     <em>{{ post.date | date: "%Y-%m-%d" }}</em> -->
 <!-- {% endfor %} -->
 
+{% assign colors = "" | split " " %}
+
 {% for vid in collections.videos %}
-    <h2>video</h2>
-    <p>{{ vid.data.title }}</p>
-    {{ vid.data.embedCode }}
+    <div class="video {% cycle 'darkslateblue', 'mediumorchid', 'seagreen', 'steelblue' %}">
+        <h2>video</h2>
+        <p>{{ vid.data.title }}</p>
+        {{ vid.data.embedCode }}
+    </div>
 {% endfor %}
 
