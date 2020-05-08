@@ -13,4 +13,9 @@ $colors: ("brown", #7b3a13), ("mediumorchid", mediumorchid),
             background-color: nth($color,2);
         }
     }
+
+}
+
+ul.nav {
+    list-style: none;
 }

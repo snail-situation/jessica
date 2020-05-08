@@ -1,6 +1,6 @@
 ---
 layout: layout.liquid
-pageTitle: Welcome to the blog
+pageTitle: Gzgzjzjz
 ---
 
 <!-- {% for post in collections.posts %} -->
@@ -8,7 +8,9 @@ pageTitle: Welcome to the blog
 <!--     <em>{{ post.date | date: "%Y-%m-%d" }}</em> -->
 <!-- {% endfor %} -->
 
-{% assign colors = "" | split " " %}
+<ul class="nav">
+    <li><a href="mailto:barney@example.com">📧</a></li>
+</ul>
 
 {% for vid in collections.videos %}
     <div class="video {% cycle 'brown', 'mediumorchid', 'seagreen', 'steelblue' %}">
@@ -17,4 +19,3 @@ pageTitle: Welcome to the blog
         {{ vid.data.embedCode }}
     </div>
 {% endfor %}
-
