@@ -2,13 +2,15 @@ body {
     margin: 0;
 }
 
-$colors: darkslateblue mediumorchid seagreen steelblue;
+// $colors: darkslateblue mediumorchid seagreen steelblue;
+
+$colors: ("brown", #7b3a13), ("mediumorchid", mediumorchid),
+    ("seagreen", seagreen), ("steelblue", steelblue);
 
 .video {
     @each $color in $colors {
-        &.#{$color} {
-            background: $color;
+        &.#{nth($color,1)} {
+            background-color: nth($color,2);
         }
     }
 }
-

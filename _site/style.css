@@ -1,1 +1,16 @@
-body{margin:0}.video.darkslateblue{background:#483d8b}.video.mediumorchid{background:#ba55d3}.video.seagreen{background:#2e8b57}.video.steelblue{background:#4682b4}
+body {
+  margin: 0; }
+
+.video.brown {
+  background-color: #7b3a13; }
+
+.video.mediumorchid {
+  background-color: mediumorchid; }
+
+.video.seagreen {
+  background-color: seagreen; }
+
+.video.steelblue {
+  background-color: steelblue; }
+
+/*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAiX3NpdGUvc3R5bGUuY3NzIiwKCSJzb3VyY2VzIjogWwoJCSJzcmMvc3R5bGUvbWFpbi5zY3NzIgoJXSwKCSJuYW1lcyI6IFtdLAoJIm1hcHBpbmdzIjogIkFBQUEsQUFBQSxJQUFJLENBQUM7RUFDRCxNQUFNLEVBQUUsQ0FBQyxHQUNaOztBQU9ELEFBRVEsTUFGRixBQUVHLE1BQU0sQ0FBWTtFQUNmLGdCQUFnQixFQU5ULE9BQU8sR0FPakI7O0FBSlQsQUFFUSxNQUZGLEFBRUcsYUFBYSxDQUFLO0VBQ2YsZ0JBQWdCLEVBTmtCLFlBQVksR0FPakQ7O0FBSlQsQUFFUSxNQUZGLEFBRUcsU0FBUyxDQUFTO0VBQ2YsZ0JBQWdCLEVBTFgsUUFBUSxHQU1oQjs7QUFKVCxBQUVRLE1BRkYsQUFFRyxVQUFVLENBQVE7RUFDZixnQkFBZ0IsRUFMYyxTQUFTLEdBTTFDIgp9 */
