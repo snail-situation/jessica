@@ -8,6 +8,10 @@
     </head>
 
     <body>
+        <h1>{{ pageTitle }}</h1>
+
+        {{ content }}
+
         <script>
           if (window.netlifyIdentity) {
             window.netlifyIdentity.on("init", user => {
@@ -19,10 +23,6 @@
             });
           }
         </script>
-
-        <h1>{{ pageTitle }}</h1>
-
-        {{ content }}
     </body>
 </html>
 
