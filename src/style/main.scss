@@ -1,8 +1,9 @@
 body {
     margin: 0;
+    a {
+        text-decoration: none;
+    }
 }
-
-// $colors: darkslateblue mediumorchid seagreen steelblue;
 
 $colors: ("brown", #7b3a13), ("mediumorchid", mediumorchid),
     ("seagreen", seagreen), ("steelblue", steelblue);
@@ -13,9 +14,25 @@ $colors: ("brown", #7b3a13), ("mediumorchid", mediumorchid),
             background-color: nth($color,2);
         }
     }
+}
 
+.videos {
+    // margin-top: 4.5em;
+    margin-top: -1.3em;
 }
 
 ul.nav {
     list-style: none;
+    text-align: right;
+    // position: fixed;
+    width: 100%;
+    background-color: white;
+    margin: 0;
+    top: 0;
+    padding: 1em;
+
+    li {
+        display: inline;
+        margin-right: 2em;
+    }
 }

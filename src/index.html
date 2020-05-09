@@ -12,10 +12,12 @@ pageTitle: Gzgzjzjz
     <li><a href="mailto:barney@example.com">📧</a></li>
 </ul>
 
-{% for vid in collections.videos %}
-    <div class="video {% cycle 'brown', 'mediumorchid', 'seagreen', 'steelblue' %}">
-        <h2>video</h2>
-        <p>{{ vid.data.title }}</p>
-        {{ vid.data.embedCode }}
-    </div>
-{% endfor %}
+<div class="videos">
+    {% for vid in collections.videos %}
+        <div class="video {% cycle 'brown', 'mediumorchid', 'seagreen', 'steelblue' %}">
+            <h2>video</h2>
+            <p>{{ vid.data.title }}</p>
+            {{ vid.data.embedCode }}
+        </div>
+    {% endfor %}
+</div>
