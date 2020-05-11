@@ -26,6 +26,10 @@ $colors: ("brown", #7b3a13), ("mediumorchid", mediumorchid),
 //     }
 // }
 
+.video {
+    border: 1px solid red;
+}
+
 .videos {
     // margin-top: 4.5em;
     // margin-top: -1.3em;
@@ -40,7 +44,7 @@ ul.nav {
     margin: 0;
     top: 0;
     padding: 1em;
-    margin-bottom: -1.3em;
+    // margin-bottom: -1.3em;
 
     li {
         display: inline;
