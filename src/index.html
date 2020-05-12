@@ -9,13 +9,13 @@ pageTitle: Gzgzjzjz
 <!-- {% endfor %} -->
 
 <ul class="nav">
-    <li {% if page.url == '/' %} class="active"{% endif %}>
+    <li class="house{% if page.url == '/' %} active{% endif %}">
         <a href="/">🏠</a>
     </li>
-    <li {% if page.url == '/resume' %} class="active"{% endif %}>
+    <li class="resume{% if page.url == '/resume' %} active{% endif %}">
         <a href="/resume">👁️</a>
     </li>
-    <li><a href="mailto:barney@example.com">📧</a></li>
+    <li class="email"><a href="mailto:barney@example.com">📧</a></li>
 </ul>
 
 <div class="videos">
