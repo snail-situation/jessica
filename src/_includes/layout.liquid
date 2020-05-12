@@ -2,12 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Gzzgzgzjzjz</title>
+        <title>{{ pageTitle }}</title>
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         <link rel="stylesheet" href="/style.css">
     </head>
 
-    <body>
+    <body class="{{ pageTitle }}">
         <script>
           if (window.netlifyIdentity) {
             window.netlifyIdentity.on("init", user => {
