@@ -8,15 +8,7 @@ pageTitle: Gzgzjzjz
 <!--     <em>{{ post.date | date: "%Y-%m-%d" }}</em> -->
 <!-- {% endfor %} -->
 
-<ul class="nav">
-    <li class="house{% if page.url == '/' %} active{% endif %}">
-        <a href="/">🏠</a>
-    </li>
-    <li class="resume{% if page.url == '/resume' %} active{% endif %}">
-        <a href="/resume">👁️</a>
-    </li>
-    <li class="email"><a href="mailto:barney@example.com">📧</a></li>
-</ul>
+{% nav page.url%}
 
 <div class="videos">
     {% for vid in collections.videos %}
@@ -26,3 +18,4 @@ pageTitle: Gzgzjzjz
         </div>
     {% endfor %}
 </div>
+
