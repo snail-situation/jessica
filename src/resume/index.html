@@ -22,9 +22,8 @@ pageTitle: Resume
 </div>
 
 <ul class="jobs">
-
     {% for job in collections.jobs %}
-        <li class="job">
+        <li class="job {% cycle 'even', 'odd' %}">
             <div class="date-range">{{ job.data.dates }}</div>
             <div class="co-title">{{ job.data.coName }}</div>
             <ul class="stuff-i-did">
@@ -34,18 +33,11 @@ pageTitle: Resume
             </ul>
         </li>
     {% endfor %}
-
-    <!-- <div class="videos">
-        {% for vid in collections.videos %}
-            <div class="video {% cycle 'brown', 'mediumorchid', 'seagreen', 'steelblue' %}">
-                <h2>{{ vid.data.title }}</h2>
-                {{ vid.data.embedCode }}
-            </div>
-        {% endfor %}
-    </div> -->
 </ul>
 
-<ul class="jobs">
+
+
+<!-- <ul class="jobs">
     <li class="job">
         <div class="date-range">2016 – present</div>
         <div class="co-title">CAA</div>
@@ -73,4 +65,4 @@ pageTitle: Resume
         <div class="stuff-i-did">FOH manager</div>
     </li>
 
-</ul>
+</ul> -->
