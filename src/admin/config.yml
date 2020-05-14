@@ -21,3 +21,13 @@ collections:
       # - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
       # - {label: "Body", name: "body", widget: "markdown"}
 
+  - name: "job"
+    label: "jobs"
+    label_singular: "job"
+    folder: "src/_posts/jobs"
+    create: true
+    fields:
+      - { label: "Date range", name: "dates", widget: "string" }
+      - { label: "Company name", name: "coName", widget: "string" }
+      - { label: "Stuff I did", name: "stuffIDid", widget: "string" }
+
