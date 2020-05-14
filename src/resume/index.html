@@ -21,8 +21,11 @@ pageTitle: Resume
     </div>
 </div>
 
+
+
+
 <ul class="jobs">
-    {% for job in collections.jobs %}
+    {% for job in collections.jobo %}
         <li class="job {% cycle 'even', 'odd' %}">
             <div class="date-range">{{ job.data.dates }}</div>
             <div class="co-title">{{ job.data.coName }}</div>
@@ -37,35 +40,3 @@ pageTitle: Resume
         </li>
     {% endfor %}
 </ul>
-
-
-
-<!-- <ul class="jobs">
-    <li class="job">
-        <div class="date-range">2016 – present</div>
-        <div class="co-title">CAA</div>
-        <ul class="stuff-i-did">
-            <li>Creative Services</li>
-            <li>Video Editing</li>
-            <li>Production</li>
-            <li>In-house projects</li>
-            <li>promotional campaigns</li>
-        </ul>
-    </li>
-
-    <li class="job">
-        <div class="date-range">2015 – 2016</div>
-        <div class="co-title">DVDYM</div>
-        <ul class="stuff-i-did">
-            <li>Editor</li>
-            <li>Film and media archiving and transfer services</li>
-        </ul>
-    </li>
-
-    <li class="job">
-        <div class="date-range">2014 – 2015</div>
-        <div class="co-title">The Frida Cinema</div>
-        <div class="stuff-i-did">FOH manager</div>
-    </li>
-
-</ul> -->

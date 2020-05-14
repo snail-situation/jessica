@@ -6,7 +6,7 @@
 //     })
 // }
 
-function nav (config) {
+module.exports = function (config) {
     config.addShortcode('nav', function (url) {
         return `<ul class="nav">
             <li class="house${url === '/' ? ' active' : ''}">
@@ -18,6 +18,14 @@ function nav (config) {
             <li class="email"><a href="mailto:barney@example.com">📧</a></li>
         </ul>`
     })
-}
 
-module.exports = nav
+    config.addCollection('jobo', function (collection) {
+        return collection.getFilteredByTag('jobs')
+            .sort (function (a, b) {
+                if (a.data.dates > b.data.dates) return 1
+                if (a.data.dates < b.data.dates) return -1
+                return 0
+            })
+            .reverse()
+    })
+}
