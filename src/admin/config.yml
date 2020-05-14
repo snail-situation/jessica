@@ -25,6 +25,7 @@ collections:
     label_singular: "job"
     folder: "src/_posts/jobs"
     create: true
+    sortableFields: ['dates']
     fields:
       - {label: "Date range", name: "dates", widget: "string"}
       - {label: "Company name", name: "coName", widget: "string"}
