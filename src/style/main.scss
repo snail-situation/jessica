@@ -72,6 +72,17 @@ ul.nav {
     }
 }
 
+.jobs {
+    list-style: none;
+    font-family: 'Jost', sans-serif;
+    text-shadow: 1px 1px 1px magenta;
+    font-size: 1.2em;
+
+    .job {
+        margin-bottom: 1em;
+    }
+}
+
 .co-title {
     display: inline-block;
 
