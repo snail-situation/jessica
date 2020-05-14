@@ -1,1 +1,62 @@
-﻿body{background-color:beige}body a{text-decoration:none}body.Gzgzjzjz{margin:0;background:url("/images/fence-guy.png") no-repeat center center fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}.video{border:1px solid red;padding:1em}ul.nav{list-style:none;text-align:right;background-color:beige;margin:0;top:0;padding:0.3em;font-size:2em;opacity:0.9}ul.nav li{display:inline;margin-right:2em}.contact{border:1px solid;background-color:white;display:inline-block;padding:1em;margin-bottom:1em}.contact div{border-bottom:1px solid;margin-bottom:0.5em}.jobs{list-style:none;font-family:'Jost', sans-serif;text-shadow:1px 1px 1px magenta;font-size:1.2em}.jobs .job{margin-bottom:1em}.co-title{display:inline-block}.co-title:after{content:" – "}.stuff-i-did{padding:0;display:inline-block;margin-top:0}.stuff-i-did li{display:inline-block}.stuff-i-did li:after{content:", "}.stuff-i-did li:last-child:after{content:""}
+body {
+  background-color: beige; }
+  body a {
+    text-decoration: none; }
+  body.Gzgzjzjz {
+    margin: 0;
+    background: url("/images/fence-guy.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+
+.video {
+  border: 1px solid red;
+  padding: 1em; }
+
+ul.nav {
+  list-style: none;
+  text-align: right;
+  background-color: beige;
+  margin: 0;
+  top: 0;
+  padding: 0.3em;
+  font-size: 2em;
+  opacity: 0.9; }
+  ul.nav li {
+    display: inline;
+    margin-right: 2em; }
+
+.contact {
+  border: 1px solid;
+  background-color: white;
+  display: inline-block;
+  padding: 1em;
+  margin-bottom: 1em; }
+  .contact div {
+    border-bottom: 1px solid;
+    margin-bottom: 0.5em; }
+
+.jobs {
+  list-style: none;
+  font-family: 'Jost', sans-serif;
+  text-shadow: 1px 1px 1px magenta;
+  font-size: 1.2em; }
+  .jobs .job {
+    margin-bottom: 1em; }
+
+.co-title {
+  display: inline-block; }
+
+.stuff-i-did {
+  padding: 0;
+  display: inline-block;
+  margin-top: 0; }
+  .stuff-i-did li {
+    display: inline-block; }
+    .stuff-i-did li:after {
+      content: ", "; }
+    .stuff-i-did li:last-child:after {
+      content: ""; }
+
+/*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAiX3NpdGUvc3R5bGUuY3NzIiwKCSJzb3VyY2VzIjogWwoJCSJzcmMvc3R5bGUvbWFpbi5zY3NzIgoJXSwKCSJuYW1lcyI6IFtdLAoJIm1hcHBpbmdzIjogIkFBSUEsQUFBQSxJQUFJLENBQUM7RUFDRCxnQkFBZ0IsRUFBRSxLQUFLLEdBZTFCO0VBaEJELEFBR0ksSUFIQSxDQUdBLENBQUMsQ0FBQztJQUNFLGVBQWUsRUFBRSxJQUFJLEdBQ3hCO0VBTEwsQUFPSSxJQVBBLEFBT0MsU0FBUyxDQUFDO0lBQ1AsTUFBTSxFQUFFLENBQUM7SUFFVCxVQUFVLEVBQUUsNEJBQTRCLENBQUMsU0FBUyxDQUFDLE1BQU0sQ0FBQyxNQUFNLENBQUMsS0FBSztJQUN0RSx1QkFBdUIsRUFBRSxLQUFLO0lBQzlCLG9CQUFvQixFQUFFLEtBQUs7SUFDM0Isa0JBQWtCLEVBQUUsS0FBSztJQUN6QixlQUFlLEVBQUUsS0FBSyxHQUN6Qjs7QUFjTCxBQUFBLE1BQU0sQ0FBQztFQUNILE1BQU0sRUFBRSxhQUFhO0VBQ3JCLE9BQU8sRUFBRSxHQUFHLEdBQ2Y7O0FBT0QsQUFBQSxFQUFFLEFBQUEsSUFBSSxDQUFDO0VBQ0gsVUFBVSxFQUFFLElBQUk7RUFDaEIsVUFBVSxFQUFFLEtBQUs7RUFHakIsZ0JBQWdCLEVBQUUsS0FBSztFQUN2QixNQUFNLEVBQUUsQ0FBQztFQUNULEdBQUcsRUFBRSxDQUFDO0VBQ04sT0FBTyxFQUFFLEtBQUs7RUFFZCxTQUFTLEVBQUUsR0FBRztFQUVkLE9BQU8sRUFBRSxHQUFHLEdBTWY7RUFsQkQsQUFjSSxFQWRGLEFBQUEsSUFBSSxDQWNGLEVBQUUsQ0FBQztJQUNDLE9BQU8sRUFBRSxNQUFNO0lBQ2YsWUFBWSxFQUFFLEdBQUcsR0FDcEI7O0FBR0wsQUFBQSxRQUFRLENBQUM7RUFDTCxNQUFNLEVBQUUsU0FBUztFQUNqQixnQkFBZ0IsRUFBRSxLQUFLO0VBQ3ZCLE9BQU8sRUFBRSxZQUFZO0VBQ3JCLE9BQU8sRUFBRSxHQUFHO0VBQ1osYUFBYSxFQUFFLEdBQUcsR0FNckI7RUFYRCxBQU9JLFFBUEksQ0FPSixHQUFHLENBQUM7SUFDQSxhQUFhLEVBQUUsU0FBUztJQUN4QixhQUFhLEVBQUUsS0FBSyxHQUN2Qjs7QUFHTCxBQUFBLEtBQUssQ0FBQztFQUNGLFVBQVUsRUFBRSxJQUFJO0VBQ2hCLFdBQVcsRUFBRSxrQkFBa0I7RUFDL0IsV0FBVyxFQUFFLG1CQUFtQjtFQUNoQyxTQUFTLEVBQUUsS0FBSyxHQUtuQjtFQVRELEFBTUksS0FOQyxDQU1ELElBQUksQ0FBQztJQUNELGFBQWEsRUFBRSxHQUFHLEdBQ3JCOztBQUdMLEFBQUEsU0FBUyxDQUFDO0VBQ04sT0FBTyxFQUFFLFlBQVksR0FLeEI7O0FBRUQsQUFBQSxZQUFZLENBQUM7RUFDVCxPQUFPLEVBQUUsQ0FBQztFQUNWLE9BQU8sRUFBRSxZQUFZO0VBQ3JCLFVBQVUsRUFBRSxDQUFDLEdBYWhCO0VBaEJELEFBS0ksWUFMUSxDQUtSLEVBQUUsQ0FBQztJQUNDLE9BQU8sRUFBRSxZQUFZLEdBU3hCO0lBZkwsQUFRUSxZQVJJLENBS1IsRUFBRSxBQUdHLE1BQU0sQ0FBQztNQUNKLE9BQU8sRUFBRSxJQUFJLEdBQ2hCO0lBVlQsQUFZUSxZQVpJLENBS1IsRUFBRSxBQU9HLFdBQVcsQUFBQSxNQUFNLENBQUM7TUFDZixPQUFPLEVBQUUsRUFBRSxHQUNkIgp9 */

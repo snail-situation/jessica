@@ -26,11 +26,14 @@ pageTitle: Resume
         <li class="job {% cycle 'even', 'odd' %}">
             <div class="date-range">{{ job.data.dates }}</div>
             <div class="co-title">{{ job.data.coName }}</div>
-            <ul class="stuff-i-did">
-                {% for stuff in job.data.stuffIDid %}
-                    <li>{{ stuff }}</li>
-                {% endfor %}
-            </ul>
+            {% if job.data.stuffIDid.size > 0%}
+                <span>—</span>
+                <ul class="stuff-i-did">
+                    {% for stuff in job.data.stuffIDid %}
+                        <li>{{ stuff }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
         </li>
     {% endfor %}
 </ul>
