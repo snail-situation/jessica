@@ -1,5 +1,5 @@
 ---
-title: Red Light (2016)
+title: Red Light
 band: The Tissues
 date: "2016"
 embedCode: <iframe width="640" height="360"
