@@ -8,6 +8,6 @@ embedCode: <iframe width="640" height="360"
 date: 2020-05-15T18:23:32.497Z
 description: |-
   music video
-  director/ediot
+  director/editor
   colorist
 ---
