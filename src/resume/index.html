@@ -21,22 +21,21 @@ pageTitle: Resume
     </div>
 </div>
 
-
-
-
 <ul class="jobs">
     {% for job in collections.jobo %}
         <li class="job {% cycle 'even', 'odd' %}">
             <div class="date-range">{{ job.data.dates }}</div>
-            <div class="co-title">{{ job.data.coName }}</div>
-            {% if job.data.stuffIDid.size > 0%}
-                <span>—</span>
-                <ul class="stuff-i-did">
-                    {% for stuff in job.data.stuffIDid %}
-                        <li>{{ stuff }}</li>
-                    {% endfor %}
-                </ul>
-            {% endif %}
+            <div class="co-title">
+                {{ job.data.coName }}
+                {% if job.data.stuffIDid.size > 0%}
+                     —
+                {% endif %}
+            </div>
+            <ul class="stuff-i-did">
+                {% for stuff in job.data.stuffIDid %}
+                    <li>{{ stuff }}</li>
+                {% endfor %}
+            </ul>
         </li>
     {% endfor %}
 </ul>

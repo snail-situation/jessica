@@ -18,6 +18,14 @@ body {
         -o-background-size: cover;
         background-size: cover;
     }
+
+    // &.Resume {
+    //     // background: url('/images/fence-guy.png') no-repeat center center fixed; 
+    //     // -webkit-background-size: cover;
+    //     // -moz-background-size: cover;
+    //     // -o-background-size: cover;
+    //     // background-size: cover;
+    // }
 }
 
 $colors: ("brown", #7b3a13), ("mediumorchid", mediumorchid),
@@ -95,8 +103,8 @@ ul.nav {
 
 .stuff-i-did {
     padding: 0;
-    display: inline-block;
-    margin-top: 0;
+    display: inline;
+    // margin-top: 0;
 
     li {
         display: inline-block;
@@ -109,4 +117,13 @@ ul.nav {
             content: "";
         }
     }
+}
+
+// nav links
+.resume.active {
+    background: radial-gradient(circle 35px, red, cyan)
+}
+
+.house.active {
+    background: linear-gradient(transparent, 92%, cyan);
 }
