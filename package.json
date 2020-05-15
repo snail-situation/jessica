@@ -7,8 +7,8 @@
     "start": "npm run build-css && concurrently --kill-others \"npm run sass-watch \" \"eleventy --serve --input=src\"",
     "build-css": "node-sass --output-style=compressed src/style/main.scss > _site/style.css",
     "sass-watch": "node-sass --watch src/style/main.scss --source-map-embed _site/style.css",
-    "build": "rm -rf _site/* && npm run build-css && npm run copy && eleventy --input=src && cp src/admin/config.yml _site/admin/config.yml",
-    "copy": "mkdir _site/images && cp src/images/* _site/images",
+    "build": "rm -rf _site/* && npm run build-css && npm run copy && eleventy --input=src",
+    "copy": "mkdir _site/images && cp src/images/* _site/images && mkdir _site/admin && cp src/admin/* _site/admin/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
