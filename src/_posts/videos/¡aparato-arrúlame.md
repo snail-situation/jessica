@@ -1,5 +1,6 @@
 ---
-title: ¡Aparato! Arrúlame
+title: Arrúlame
+band: ¡Aparato!
 embedCode: <iframe width="640" height="360"
   src="https://www.youtube.com/embed/4fSqRoCGoMU" frameborder="0"
   allow="accelerometer; autoplay; encrypted-media; gyroscope;
