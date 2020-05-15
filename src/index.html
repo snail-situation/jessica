@@ -13,8 +13,13 @@ pageTitle: Gzgzjzjz
 <div class="videos">
     {% for vid in collections.videos %}
         <div class="video {% cycle 'brown', 'mediumorchid', 'seagreen', 'steelblue' %}">
-            <h2>{{ vid.data.title }}</h2>
             {{ vid.data.embedCode }}
+            <div class="vid-band">{{ vid.data.band }}</div>
+            <div class="vid-title">{{ vid.data.title }}</div>
+            <div class="vid-description">
+                <pre>{{ vid.data.description }}</pre>
+            </div>
         </div>
+
     {% endfor %}
 </div>

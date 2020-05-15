@@ -40,8 +40,29 @@ $colors: ("brown", #7b3a13), ("mediumorchid", mediumorchid),
 // }
 
 .video {
-    border: 1px solid red;
+    // border: 1px solid red;
     padding: 1em;
+
+    font-family: 'Jost', sans-serif;
+    color: mediumvioletred;
+    text-shadow: 3px 3px 3px black;
+    font-size: 1.2em;
+
+    &.steelblue {
+        background: rgba(70, 130, 180, 0.4);
+    }
+
+    &.brown {
+        background: rgba(139, 69, 19, 0.4);
+    }
+
+    &.mediumorchid {
+        background: rgba(186, 85, 211, 0.4);
+    }
+
+    &.seagreen {
+        background: rgba(46, 139, 87, 0.4);
+    }
 }
 
 // .videos {
