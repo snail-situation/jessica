@@ -39,6 +39,13 @@ $colors: ("brown", #7b3a13), ("mediumorchid", mediumorchid),
 //     }
 // }
 
+.name {
+    // font-family: 'Limelight', serif;
+    font-family: 'Chonburi', serif;
+    font-size: 3em;
+    white-space: pre;
+}
+
 .videos {
     margin-top: 90vh;
 }
@@ -84,18 +91,17 @@ ul.nav {
     text-align: right;
     // position: fixed;
     // width: 100%;
-    background-color: beige;
+    background: rgba(255, 255, 255, 0.4);
     margin: 0;
     top: 0;
     padding: 0.3em;
     // margin-bottom: -1.3em;
     font-size: 2em;
 
-    opacity: 0.9;
-
     li {
         display: inline;
         margin-right: 2em;
+        opacity: 1;
     }
 }
 
