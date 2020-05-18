@@ -24,7 +24,6 @@ pageTitle: Resume
 <ul class="jobs">
     {% for job in collections.jobo %}
         <li class="job {% cycle 'even', 'odd' %}">
-            <div class="date-range">{{ job.data.dates }}</div>
             <div class="co-title">
                 {{ job.data.coName }}
                 {% if job.data.stuffIDid.size > 0%}
@@ -36,6 +35,7 @@ pageTitle: Resume
                     <li>{{ stuff }}</li>
                 {% endfor %}
             </ul>
+            <div class="date-range">{{ job.data.dates }}</div>
         </li>
     {% endfor %}
 </ul>
