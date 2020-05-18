@@ -9,14 +9,20 @@ body {
         text-decoration: none;
     }
 
-    &.Gzgzjzjz {
-        margin: 0;
+    margin: 0;
 
+    &.Gzgzjzjz {
         background: url('/images/fence-guy.png') no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+    }
+
+    &.Resume {
+        hr{
+            margin: 0;
+        }
     }
 
     // &.Resume {
@@ -44,6 +50,7 @@ $colors: ("brown", #7b3a13), ("mediumorchid", mediumorchid),
     font-family: 'Chonburi', serif;
     font-size: 3em;
     white-space: pre;
+    margin-top: 2em;
 }
 
 .videos {
@@ -111,6 +118,7 @@ ul.nav {
     display: inline-block;
     padding: 1em;
     margin-bottom: 1em;
+    margin-top: 1em;
 
     div {
         border-bottom: 1px solid;
