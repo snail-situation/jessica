@@ -20,7 +20,8 @@ body {
     }
 
     &.Resume {
-        hr{
+        margin-bottom: 6em;
+        hr {
             margin: 0;
         }
     }
@@ -56,6 +57,21 @@ $colors: ("brown", #7b3a13), ("mediumorchid", mediumorchid),
 .videos {
     margin-top: 90vh;
 }
+
+// ul.jobs {
+//     width: 45vw;
+//     & > li {
+//         display: inline;
+//     }
+// }
+
+// ul.videos {
+//     width: 50vw;
+//     margin: 0;
+//     & > li {
+//         overflow: hidden;
+//     }
+// }
 
 .video {
     // border: 1px solid red;
@@ -166,7 +182,7 @@ ul.nav {
 
 // nav links
 .resume.active {
-    background: radial-gradient(circle 35px, red, cyan)
+    background: radial-gradient(circle 20px, red, transparent)
 }
 
 .house.active {

@@ -39,3 +39,18 @@ pageTitle: Resume
         </li>
     {% endfor %}
 </ul>
+
+<!-- <ul class="videos">
+    {% for vid in collections.videos %}
+        <li class="video {% cycle 'brown', 'mediumorchid', 'seagreen', 'steelblue' %}">
+            {{ vid.data.embedCode }}
+            <div class="vid-band">{{ vid.data.band }}</div>
+            <div class="vid-title">{{ vid.data.title }}</div>
+            <div class="vid-date">({{ vid.data.date }})</div>
+            <div class="vid-description">
+                <pre>{{ vid.data.description }}</pre>
+            </div>
+        </li>
+
+    {% endfor %}
+</ul> -->
