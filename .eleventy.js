@@ -21,7 +21,7 @@ module.exports = function (config) {
 
     config.addCollection('jobo', function (collection) {
         return collection.getFilteredByTag('jobs')
-            .sort (function (a, b) {
+            .sort(function (a, b) {
                 if (a.data.dates > b.data.dates) return 1
                 if (a.data.dates < b.data.dates) return -1
                 return 0
@@ -29,3 +29,4 @@ module.exports = function (config) {
             .reverse()
     })
 }
+
