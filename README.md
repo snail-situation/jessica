@@ -1,8 +1,14 @@
 # jessicas website
 
+## develop locally
 ```
-$ npx eleventy --serve --input=src
+npm start
 ```
+go to localhost:8080
 
+## netlify site
 https://geez.netlify.app/
+
+## CMS
+https://geez.netlify.app/admin
 
