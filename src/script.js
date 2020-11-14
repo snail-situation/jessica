@@ -7,7 +7,6 @@ document.getElementById('main-links').addEventListener('click', ev => {
 
 var btn = document.querySelector('button.clicker')
 btn.addEventListener('click', (ev) => {
-    console.log('click')
     update()
 })
 

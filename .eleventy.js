@@ -1,14 +1,9 @@
-// function comp (config) {
-//     config.addShortcode('foo', function (bar, baz) {
-//         return `<div class="foo">
-//             ${bar}, ${baz}
-//         </div`;
-//     })
-// }
-
 module.exports = function (config) {
     config.addShortcode('nav', function (url) {
         return `<ul class="nav">
+            <li class="video-icon${url === '' ? ' active' : ''}">
+                <button class="clicker">🎥</button>
+            </li>
             <li class="house${url === '/' ? ' active' : ''}">
                 <a href="/">🏠</a>
             </li>

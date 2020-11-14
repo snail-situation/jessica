@@ -28,11 +28,6 @@ button {
 }
 
 button.clicker {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    display: block;
-    top: 5em;
     background-color: transparent;
     border: none;
 }
@@ -112,7 +107,14 @@ ul.nav {
     margin: 0;
     top: 0;
     padding: 0.3em;
-    font-size: 2em;
+    font-size: 2em!important;
+
+    & button {
+        font-size: inherit;
+        &:focus {
+            outline: none;
+        }
+    }
 
     li {
         display: inline;
