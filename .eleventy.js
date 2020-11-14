@@ -4,13 +4,12 @@ module.exports = function (config) {
             <li class="video-icon${url === '' ? ' active' : ''}">
                 <button class="clicker">🎥</button>
             </li>
-            <li class="house${url === '/' ? ' active' : ''}">
-                <a href="/">🏠</a>
+            <li>
+                <a href="/" class="house${url === '/' ? ' active' : ''}">🏠</a>
+                <a class="resume${url.includes('/resume') ? ' active' : ''}"
+                    href="/resume">👁️</a>
+                <a href="mailto:barney@example.com">📧</a>
             </li>
-            <li class="resume${url.includes('/resume') ? ' active' : ''}">
-                <a href="/resume">👁️</a>
-            </li>
-            <li class="email"><a href="mailto:barney@example.com">📧</a></li>
         </ul>`
     })
 

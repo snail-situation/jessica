@@ -102,12 +102,13 @@ $colors: ("brown", #7b3a13), ("mediumorchid", mediumorchid),
 
 ul.nav {
     list-style: none;
-    text-align: right;
     background: rgba(255, 255, 255, 0.4);
     margin: 0;
     top: 0;
     padding: 0.3em;
     font-size: 2em!important;
+    display: flex;
+    justify-content: space-between;
 
     & button {
         font-size: inherit;
@@ -118,8 +119,9 @@ ul.nav {
 
     li {
         display: inline;
-        margin-right: 2em;
-        opacity: 1;
+        a {
+            margin-right: 2em;
+        }
     }
 }
 
