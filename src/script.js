@@ -1,5 +1,3 @@
-console.log('wooooooo')
-
 var isVisible = false
 document.getElementById('main-links').addEventListener('click', ev => {
     update()
