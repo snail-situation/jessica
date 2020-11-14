@@ -37,6 +37,30 @@ button.clicker {
     border: none;
 }
 
+#main-links {
+    display: none;
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    &.is-visible {
+        display: flex;
+        justify-content: center;
+        top: 0;
+        width: 100vw;
+        position: fixed;
+        z-index: 999;
+        height: 100vh;
+        background-color: #d86400a1;
+        font-size: 2em;
+    }
+}
+
 $colors: ("brown", #7b3a13), ("mediumorchid", mediumorchid),
     ("seagreen", seagreen), ("steelblue", steelblue);
 
