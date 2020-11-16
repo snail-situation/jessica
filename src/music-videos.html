@@ -5,22 +5,7 @@ pageTitle: Music videos
 
 {% nav page.url %}
 
-<div id="main-links">
-    <ul>
-        <li>
-            <a href="/music-videos">music videos</a>
-        </li>
-        <li>
-            <a href="/animation">animation</a>
-        </li>
-        <li>
-            <a href="/editing">editing</a>
-        </li>
-        <li>
-            <a href="/video-diaries">video diaries</a>
-        </li>
-    </ul>
-</div>
+{% vidLinks %}
 
 <div class="music-videos">
     {% for vid in collections.music-videos %}
