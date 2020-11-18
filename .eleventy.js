@@ -1,9 +1,9 @@
 module.exports = function (config) {
     config.addShortcode('nav', function (url) {
-        var isVid = url.includes('animation') ||
-            url.includes('editing') ||
-            url.includes('diaries') ||
-            url.includes('music-videos')
+        // var isVid = url.includes('animation') ||
+        //     url.includes('editing') ||
+        //     url.includes('diaries') ||
+        //     url.includes('music-videos')
 
         var selectedLink = url.includes('animation') ?
             'animation' :
@@ -16,7 +16,7 @@ module.exports = function (config) {
             ''
 
         return `<ul class="nav">
-            <li class="video-icon${url === '' ? ' active' : ''}">
+            <li class="video-icon${selectedLink ? ' active' : ''}">
                 <button class="clicker">🎥</button>
                 <span>${selectedLink}</span>
             </li>
