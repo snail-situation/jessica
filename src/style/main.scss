@@ -1,5 +1,6 @@
 body {
     background-color: beige;
+    font-family: sans-serif;
 
     a {
         text-decoration: none;
@@ -7,21 +8,36 @@ body {
 
     margin: 0;
 
-    // &.Gzgzjzjz {
-    //     background: url('/images/fence-guy.png') no-repeat center center fixed;
-    //     -webkit-background-size: cover;
-    //     -moz-background-size: cover;
-    //     -o-background-size: cover;
-    //     background-size: cover;
+    // &.index {
+        // background: url('/images/fence-guy.png') no-repeat center center fixed;
+        // -webkit-background-size: cover;
+        // -moz-background-size: cover;
+        // -o-background-size: cover;
+        // background-size: cover;
     // }
 
-    &.index {
-        background: url('/images/fence-guy.png') no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+
+    // --------------- main nav -------------------
+    // on index page
+    %plain-list {
+        padding: 0;
+        list-style: none;
     }
+
+    .main-nav {
+        display: flex;
+        padding-left: 10vw;
+        padding-top: 20vh;
+        & > ul {
+            @extend %plain-list;
+            li {
+                margin-bottom: 0.5em;
+            }
+        }
+    }
+    // -------------------------------------------
+
+
 
     &.Resume {
         margin-bottom: 6em;
@@ -68,10 +84,11 @@ $colors: ("brown", #7b3a13), ("mediumorchid", mediumorchid),
     ("seagreen", seagreen), ("steelblue", steelblue);
 
 .name {
-    font-family: 'Chonburi', serif;
-    font-size: 3em;
-    white-space: pre;
-    margin-top: 2em;
+    // font-family: 'Chonburi', serif;
+    font-size: 2em;
+    margin: 1em;
+    margin-bottom: 0;
+    // white-space: pre;
 }
 
 .videos {

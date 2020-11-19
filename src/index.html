@@ -29,21 +29,16 @@ bodyClass: index
     Gonzales
 </div>
 
-<div class="videos">
-    {% for vid in collections.videos %}
-        <div class="video {% cycle 'brown', 'mediumorchid', 'seagreen', 'steelblue' %}">
-            {{ vid.data.embedCode }}
-            <div class="vid-band">{{ vid.data.band }}</div>
-            <div class="vid-title">{{ vid.data.title }}</div>
-            <div class="vid-date">({{ vid.data.date }})</div>
-            <div class="vid-description">
-                <pre>{{ vid.data.description }}</pre>
-            </div>
-        </div>
-    {% endfor %}
+<div class="main-nav">
+    <ul>
+        <li>
+            <a href="/music-videos">music videos</a>
+        </li>
+        <li>
+            <a href="/animation">animation</a>
+        </li>
+        <li>
+            <a href="/editing">editing</a>
+        </li>
+    </ul>
 </div>
-
-<!-- <button class="clicker"></button> -->
-
-<!-- <script src="/script.js"></script> -->
-
