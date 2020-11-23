@@ -6,6 +6,9 @@ body {
 
     a {
         text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     margin: 0;
@@ -33,18 +36,38 @@ body {
         & > ul {
             @extend %plain-list;
             margin-top: 0;
+            margin-bottom: 0;
+
+            display: grid;
+            width: 100%;
+            grid-gap: 0.5em;
+            grid-template-rows: 70vh 30vh;
+            grid-template-columns: 1fr 1fr;
+
+            // display: grid;
+            // grid-gap: 0.5em;
+            // grid-template-rows: 70vh 30vh;
+            // grid-template-columns: 50vw 50vw;
+
             li {
+                font-size: 3em;
                 margin: 0;
-                margin-bottom: 0.5em;
-                height: 70vh;
                 display: inline-block;
                 background-color: black;
                 padding: 1em;
-                width: 48vw;
+                text-align: center;
+                writing-mode: vertical-lr;
+                font-size: 7vh;
+                padding-left: 40%;
 
                 &:last-child {
-                    width: 100vw;
-                    height: 30vh;
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    padding: 0.5em;
+                    padding-left: 40%;
+                    writing-mode: initial;
+                    padding-left: 0;
+                    padding-top: 1.5em;
                 }
             }
         }
@@ -140,10 +163,13 @@ $colors: ("brown", #7b3a13), ("mediumorchid", mediumorchid),
 }
 
 ul.nav {
+    position: fixed;
+    width: 100%;
     list-style: none;
-    background: rgba(0, 0, 0, 0.13);
+    // background: rgba(0, 0, 0, 0.13);
+    background: #f0f8ff2b;
     margin: 0;
-    top: 0;
+    // top: 0;
     padding: 0.3em;
     font-size: 2em!important;
     display: flex;
@@ -213,6 +239,11 @@ ul.nav {
             content: "";
         }
     }
+}
+
+.music-videos, .animation, .editing {
+    position: relative;
+    top: 4em;
 }
 
 // nav links
