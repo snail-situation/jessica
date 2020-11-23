@@ -34,15 +34,17 @@ body {
             @extend %plain-list;
             margin-top: 0;
             li {
+                margin: 0;
                 margin-bottom: 0.5em;
-                height: 50vh;
-                display: block;
+                height: 70vh;
+                display: inline-block;
                 background-color: black;
                 padding: 1em;
-                width: 45vw;
+                width: 48vw;
 
                 &:last-child {
-                    width: 90vw;
+                    width: 100vw;
+                    height: 30vh;
                 }
             }
         }
