@@ -2,6 +2,8 @@ body {
     // background-color: beige;
     font-family: sans-serif;
 
+    background-color: #dd9ef7;
+
     a {
         text-decoration: none;
     }
@@ -26,12 +28,22 @@ body {
 
     .main-nav {
         display: flex;
-        padding-left: 10vw;
-        padding-top: 20vh;
+        // padding-left: 10vw;
+        // padding-top: 20vh;
         & > ul {
             @extend %plain-list;
+            margin-top: 0;
             li {
                 margin-bottom: 0.5em;
+                height: 50vh;
+                display: block;
+                background-color: black;
+                padding: 1em;
+                width: 45vw;
+
+                &:last-child {
+                    width: 90vw;
+                }
             }
         }
     }
