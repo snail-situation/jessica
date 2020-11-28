@@ -1,3 +1,10 @@
+
+// example bg
+#test {
+    background: linear-gradient(304deg, #f8f292, #07bed8, #fd5790, #ffa849, #f8f292);
+}
+
+
 body {
     // background-color: beige;
     font-family: sans-serif;
@@ -12,14 +19,6 @@ body {
     }
 
     margin: 0;
-
-    // &.index {
-        // background: url('/images/fence-guy.png') no-repeat center center fixed;
-        // -webkit-background-size: cover;
-        // -moz-background-size: cover;
-        // -o-background-size: cover;
-        // background-size: cover;
-    // }
 
 
     // --------------- main nav -------------------
