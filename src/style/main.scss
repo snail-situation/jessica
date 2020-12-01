@@ -9,7 +9,9 @@ body {
     // background-color: beige;
     font-family: sans-serif;
 
-    background-color: #dd9ef7;
+    // background-color: #dd9ef7;
+    // background: linear-gradient(304deg, #f8f292, #07bed8, #fd5790, #ffa849, #f8f292);
+    background: linear-gradient(304deg, #4e4b19, #01333a, #6957fd, #5a3205, #4a481f);
 
     a {
         text-decoration: none;
@@ -43,16 +45,12 @@ body {
             grid-template-rows: 70vh 30vh;
             grid-template-columns: 1fr 1fr;
 
-            // display: grid;
-            // grid-gap: 0.5em;
-            // grid-template-rows: 70vh 30vh;
-            // grid-template-columns: 50vw 50vw;
-
             li {
                 font-size: 3em;
                 margin: 0;
                 display: inline-block;
                 background-color: black;
+                background-blend-mode: multiply;
                 padding: 1em;
                 text-align: center;
                 writing-mode: vertical-lr;
