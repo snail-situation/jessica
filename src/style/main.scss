@@ -4,6 +4,10 @@
     background: linear-gradient(304deg, #f8f292, #07bed8, #fd5790, #ffa849, #f8f292);
 }
 
+#content {
+    margin-top: 6em;
+}
+
 
 body {
     // background-color: beige;
@@ -73,11 +77,16 @@ body {
 
 
 
-    &.Resume {
+    &.resume {
+        background: beige;
         margin-bottom: 6em;
         hr {
             margin: 0;
         }
+    }
+
+    &.music-videos {
+        background: beige;
     }
 }
 
@@ -163,14 +172,16 @@ ul.nav {
     position: fixed;
     width: 100%;
     list-style: none;
-    // background: rgba(0, 0, 0, 0.13);
-    background: #f0f8ff2b;
+    background: rgba(0, 0, 0, 0.13);
+    // background: #9e968a;
+    // background: #f0f8ff2b;
     margin: 0;
     // top: 0;
     padding: 0.3em;
     font-size: 2em!important;
     display: flex;
     justify-content: space-between;
+    top: 0;
 
     & button {
         font-size: inherit;
@@ -240,7 +251,7 @@ ul.nav {
 
 .music-videos, .animation, .editing {
     position: relative;
-    top: 4em;
+    top: 2em;
 }
 
 // nav links

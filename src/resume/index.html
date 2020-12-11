@@ -1,6 +1,7 @@
 ---
 layout: layout.liquid
 pageTitle: Resume
+bodyClass: resume
 ---
 
 {% nav page.url%}
@@ -24,37 +25,40 @@ pageTitle: Resume
     </ul>
 </div>
 
-<div class="contact">
-    <div class="contact-name">
-        Jessica GZ Gonzales
-    </div>
-    <div class="phone">
-        (424) 389 6692
-    </div>
-    <div class="mail">
-        <a href="mailto:jessica.gz.gonzales@gmail.com">
-            Jessica.GZ.Gonzales@gmail.com
-        </a> 
-    </div>
-</div>
+<div id="content">
 
-<ul class="jobs">
-    {% for job in collections.jobo %}
-        <li class="job {% cycle 'even', 'odd' %}">
-            <div class="co-title">
-                {{ job.data.coName }}
-                {% if job.data.stuffIDid.size > 0%}
-                     —
-                {% endif %}
-            </div>
-            <ul class="stuff-i-did">
-                {% for stuff in job.data.stuffIDid %}
-                    <li>{{ stuff }}</li>
-                {% endfor %}
-            </ul>
-            <div class="date-range">{{ job.data.dates }}</div>
-        </li>
-    {% endfor %}
-</ul>
+    <div class="contact">
+        <div class="contact-name">
+            Jessica GZ Gonzales
+        </div>
+        <div class="phone">
+            (424) 389 6692
+        </div>
+        <div class="mail">
+            <a href="mailto:jessica.gz.gonzales@gmail.com">
+                Jessica.GZ.Gonzales@gmail.com
+            </a> 
+        </div>
+    </div>
+
+    <ul class="jobs">
+        {% for job in collections.jobo %}
+            <li class="job {% cycle 'even', 'odd' %}">
+                <div class="co-title">
+                    {{ job.data.coName }}
+                    {% if job.data.stuffIDid.size > 0%}
+                        —
+                    {% endif %}
+                </div>
+                <ul class="stuff-i-did">
+                    {% for stuff in job.data.stuffIDid %}
+                        <li>{{ stuff }}</li>
+                    {% endfor %}
+                </ul>
+                <div class="date-range">{{ job.data.dates }}</div>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
 
 <script src="/script.js"></script>
