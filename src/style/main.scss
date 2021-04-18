@@ -1,25 +1,92 @@
+
+// example bg
+#test {
+    background: linear-gradient(304deg, #f8f292, #07bed8, #fd5790, #ffa849, #f8f292);
+}
+
+#content {
+    margin-top: 6em;
+}
+
+
 body {
-    background-color: beige;
+    // background-color: beige;
+    font-family: sans-serif;
+
+    // background-color: #dd9ef7;
+    // background: linear-gradient(304deg, #f8f292, #07bed8, #fd5790, #ffa849, #f8f292);
+    background: linear-gradient(304deg, #4e4b19, #01333a, #6957fd, #5a3205, #4a481f);
 
     a {
         text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     margin: 0;
 
-    &.Gzgzjzjz {
-        background: url('/images/fence-guy.png') no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+
+    // --------------- main nav -------------------
+    // on index page
+    %plain-list {
+        padding: 0;
+        list-style: none;
     }
 
-    &.Resume {
+    .main-nav {
+        display: flex;
+        // padding-left: 10vw;
+        // padding-top: 20vh;
+        & > ul {
+            @extend %plain-list;
+            margin-top: 0;
+            margin-bottom: 0;
+
+            display: grid;
+            width: 100%;
+            grid-gap: 0.5em;
+            grid-template-rows: 70vh 30vh;
+            grid-template-columns: 1fr 1fr;
+
+            li {
+                font-size: 3em;
+                margin: 0;
+                display: inline-block;
+                background-color: black;
+                background-blend-mode: multiply;
+                padding: 1em;
+                text-align: center;
+                writing-mode: vertical-lr;
+                font-size: 7vh;
+                padding-left: 40%;
+
+                &:last-child {
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    padding: 0.5em;
+                    padding-left: 40%;
+                    writing-mode: initial;
+                    padding-left: 0;
+                    padding-top: 1.5em;
+                }
+            }
+        }
+    }
+    // -------------------------------------------
+
+
+
+    &.resume {
+        background: beige;
         margin-bottom: 6em;
         hr {
             margin: 0;
         }
+    }
+
+    &.music-videos {
+        background: beige;
     }
 }
 
@@ -28,23 +95,43 @@ button {
 }
 
 button.clicker {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    display: block;
-    top: 5em;
     background-color: transparent;
     border: none;
+}
+
+#main-links {
+    display: none;
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    &.is-visible {
+        display: flex;
+        justify-content: center;
+        top: 0;
+        width: 100vw;
+        position: fixed;
+        z-index: 999;
+        height: 100vh;
+        background-color: #d86400a1;
+        font-size: 2em;
+    }
 }
 
 $colors: ("brown", #7b3a13), ("mediumorchid", mediumorchid),
     ("seagreen", seagreen), ("steelblue", steelblue);
 
 .name {
-    font-family: 'Chonburi', serif;
-    font-size: 3em;
-    white-space: pre;
-    margin-top: 2em;
+    // font-family: 'Chonburi', serif;
+    font-size: 2em;
+    margin: 1em;
+    margin-bottom: 0;
+    // white-space: pre;
 }
 
 .videos {
@@ -82,18 +169,32 @@ $colors: ("brown", #7b3a13), ("mediumorchid", mediumorchid),
 }
 
 ul.nav {
+    position: fixed;
+    width: 100%;
     list-style: none;
-    text-align: right;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(0, 0, 0, 0.13);
+    // background: #9e968a;
+    // background: #f0f8ff2b;
     margin: 0;
-    top: 0;
+    // top: 0;
     padding: 0.3em;
-    font-size: 2em;
+    font-size: 2em!important;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+
+    & button {
+        font-size: inherit;
+        &:focus {
+            outline: none;
+        }
+    }
 
     li {
         display: inline;
-        margin-right: 2em;
-        opacity: 1;
+        a {
+            margin-right: 2em;
+        }
     }
 }
 
@@ -146,6 +247,11 @@ ul.nav {
             content: "";
         }
     }
+}
+
+.music-videos, .animation, .editing {
+    position: relative;
+    top: 2em;
 }
 
 // nav links

@@ -1,22 +1,51 @@
-// function comp (config) {
-//     config.addShortcode('foo', function (bar, baz) {
-//         return `<div class="foo">
-//             ${bar}, ${baz}
-//         </div`;
-//     })
-// }
-
 module.exports = function (config) {
     config.addShortcode('nav', function (url) {
+        // var isVid = url.includes('animation') ||
+        //     url.includes('editing') ||
+        //     url.includes('diaries') ||
+        //     url.includes('music-videos')
+
+        var selectedLink = url.includes('animation') ?
+            'animation' :
+            url.includes('editing') ?
+            'editing' :
+            url.includes('diaries') ?
+            'video diaries' :
+            url.includes('music-videos') ?
+            'music videos' :
+            ''
+
         return `<ul class="nav">
-            <li class="house${url === '/' ? ' active' : ''}">
-                <a href="/">🏠</a>
+            <li class="video-icon${selectedLink ? ' active' : ''}">
+                <button class="clicker">🎥</button>
+                <span>${selectedLink}</span>
             </li>
-            <li class="resume${url.includes('/resume') ? ' active' : ''}">
-                <a href="/resume">👁️</a>
+            <li>
+                <a href="/" class="house${url === '/' ? ' active' : ''}">🏠</a>
+                <a class="resume${url.includes('/resume') ? ' active' : ''}"
+                    href="/resume">👁️</a>
+                <a href="mailto:barney@example.com">📧</a>
             </li>
-            <li class="email"><a href="mailto:barney@example.com">📧</a></li>
         </ul>`
+    })
+
+    config.addShortcode('vidLinks', function (url) {
+        return `<div id="main-links">
+            <ul>
+                <li>
+                    <a href="/music-videos">music videos</a>
+                </li>
+                <li>
+                    <a href="/animation">animation</a>
+                </li>
+                <li>
+                    <a href="/editing">editing</a>
+                </li>
+                <li>
+                    <a href="/video-diaries">video diaries</a>
+                </li>
+            </ul>
+        </div>`
     })
 
     config.addCollection('jobo', function (collection) {

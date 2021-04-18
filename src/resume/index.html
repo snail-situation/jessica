@@ -1,56 +1,64 @@
 ---
 layout: layout.liquid
 pageTitle: Resume
+bodyClass: resume
 ---
 
 {% nav page.url%}
 
 <hr />
 
-<div class="contact">
-    <div class="contact-name">
-        Jessica GZ Gonzales
-    </div>
-    <div class="phone">
-        (424) 389 6692
-    </div>
-    <div class="mail">
-        <a href="mailto:jessica.gz.gonzales@gmail.com">
-            Jessica.GZ.Gonzales@gmail.com
-        </a> 
-    </div>
+<div id="main-links">
+    <ul>
+        <li>
+            <a href="/music-videos">music videos</a>
+        </li>
+        <li>
+            <a href="/animation">animation</a>
+        </li>
+        <li>
+            <a href="/editing">editing</a>
+        </li>
+        <li>
+            <a href="/video-diaries">video diaries</a>
+        </li>
+    </ul>
 </div>
 
-<ul class="jobs">
-    {% for job in collections.jobo %}
-        <li class="job {% cycle 'even', 'odd' %}">
-            <div class="co-title">
-                {{ job.data.coName }}
-                {% if job.data.stuffIDid.size > 0%}
-                     —
-                {% endif %}
-            </div>
-            <ul class="stuff-i-did">
-                {% for stuff in job.data.stuffIDid %}
-                    <li>{{ stuff }}</li>
-                {% endfor %}
-            </ul>
-            <div class="date-range">{{ job.data.dates }}</div>
-        </li>
-    {% endfor %}
-</ul>
+<div id="content">
 
-<!-- <ul class="videos">
-    {% for vid in collections.videos %}
-        <li class="video {% cycle 'brown', 'mediumorchid', 'seagreen', 'steelblue' %}">
-            {{ vid.data.embedCode }}
-            <div class="vid-band">{{ vid.data.band }}</div>
-            <div class="vid-title">{{ vid.data.title }}</div>
-            <div class="vid-date">({{ vid.data.date }})</div>
-            <div class="vid-description">
-                <pre>{{ vid.data.description }}</pre>
-            </div>
-        </li>
+    <div class="contact">
+        <div class="contact-name">
+            Jessica GZ Gonzales
+        </div>
+        <div class="phone">
+            (424) 389 6692
+        </div>
+        <div class="mail">
+            <a href="mailto:jessica.gz.gonzales@gmail.com">
+                Jessica.GZ.Gonzales@gmail.com
+            </a> 
+        </div>
+    </div>
 
-    {% endfor %}
-</ul> -->
+    <ul class="jobs">
+        {% for job in collections.jobo %}
+            <li class="job {% cycle 'even', 'odd' %}">
+                <div class="co-title">
+                    {{ job.data.coName }}
+                    {% if job.data.stuffIDid.size > 0%}
+                        —
+                    {% endif %}
+                </div>
+                <ul class="stuff-i-did">
+                    {% for stuff in job.data.stuffIDid %}
+                        <li>{{ stuff }}</li>
+                    {% endfor %}
+                </ul>
+                <div class="date-range">{{ job.data.dates }}</div>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<script src="/script.js"></script>
