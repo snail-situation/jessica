@@ -12,3 +12,7 @@ https://geez.netlify.app/
 ## CMS
 https://geez.netlify.app/admin
 
+## install netlify large media
+
+https://css-tricks.com/getting-netlify-large-media-going/
+

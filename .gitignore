@@ -182,3 +182,6 @@ node_modules
 bundle.js
 _site
 
+
+# Local Netlify folder
+.netlify
